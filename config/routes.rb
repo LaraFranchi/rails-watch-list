@@ -12,4 +12,19 @@ Rails.application.routes.draw do
   get '/lists', to: 'lists#index'
 
   get '/lists', to: 'lists#new'
+
+  get '/lists/:id', to: 'lists#show', as: :list
 end
+
+# BookmarksController
+#   routing
+#     routes to #new (FAILED - 23)
+#     routes to #create (FAILED - 24)
+#     routes to #destroy (FAILED - 25)
+
+# ListsController
+#   routing
+#     routes to #index
+#     routes to #new (FAILED - 26)
+#     routes to #show (FAILED - 27)
+#     routes to #create (FAILED - 28)
