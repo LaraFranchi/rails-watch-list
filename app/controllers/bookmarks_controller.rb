@@ -5,7 +5,6 @@ class BookmarksController < ApplicationController
 
   def create
     @bookmark = Bookmark.new(bookmark_params)
-
     if @bookmark.save
       redirect_to (@list)
     else
@@ -20,8 +19,9 @@ class BookmarksController < ApplicationController
   end
 end
 
-# GET new
+# GET new WORKS
 # assigns a new bookmark to @bookmark (FAILED - 1)
+
 # POST create
 # with valid params
 #   creates a new bookmark (FAILED - 2)
@@ -30,5 +30,6 @@ end
 # with invalid params
 #   assigns a newly created but unsaved bookmark as @bookmark (FAILED - 5)
 #   re-renders the 'new' template or 'lists/show' (FAILED - 6)
+
 # DELETE destroy
 # deletes a bookmark (FAILED - 7)

@@ -16,16 +16,15 @@ class ListsController < ApplicationController
   end
 end
 
-
-
-
-
-# GET index
+# GET index WORKS
 # assigns all lists as @lists (FAILED - 8)
-# GET show
+
+# GET show WORKS
 # assigns the requested list as @list (FAILED - 9)
-# GET new
+
+# GET new WORKS
 # assigns a new list as @list (FAILED - 10)
+
 # POST create
 # with valid params
 #   creates a new List (FAILED - 11)

@@ -9,13 +9,13 @@ Rails.application.routes.draw do
   post '/bookmarks', to: 'bookmarks#create'
 
 
-  get '/lists', to: 'lists#index'
+  get '/lists', to: 'lists#index' # WORKS
 
   get '/lists', to: 'lists#new'
 
-  get '/lists/:id', to: 'lists#show', as: :list
+  get '/lists/:id', to: 'lists#show', as: :list # WORKS
 
-  post '/lists/', to: 'lists#create'
+  post '/lists/', to: 'lists#create' # WORKS
 end
 
 # BookmarksController
@@ -28,5 +28,5 @@ end
 #   routing
 #     routes to #index
 #     routes to #new (FAILED - 26)
-#     routes to #show (FAILED - 27)
-#     routes to #create (FAILED - 28)
+#     routes to #show
+#     routes to #create
