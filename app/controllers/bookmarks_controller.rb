@@ -6,7 +6,7 @@ class BookmarksController < ApplicationController
   def create
     @bookmark = Bookmark.new(bookmark_params)
     if @bookmark.save
-      redirect_to (@list)
+      redirect_to list_path(@list)
     else
       render :new, status: :unprocessable_entity
     end
