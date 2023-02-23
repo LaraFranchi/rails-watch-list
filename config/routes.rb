@@ -3,4 +3,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+
+
+  get '/bookmarks/new', to: 'bookmarks#new', as: :new_bookmark
+
+  post '/bookmarks', to: 'bookmarks#create'
 end
+
