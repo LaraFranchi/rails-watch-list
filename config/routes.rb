@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   post '/bookmarks', to: 'bookmarks#create'
 
-
+  
   get '/lists', to: 'lists#index' # WORKS
 
   get '/lists', to: 'lists#new'
